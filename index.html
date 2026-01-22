@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            transition: opacity ease-in 0.2s;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/style2.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Laxmi Food Service</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Young+Serif" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&amp;display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--? Fonts  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&amp;display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .whatsapp {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            height: 80px;
+            width: 70px;
+            z-index: 9999;
+        }
+
+        .social-media-bg {
+            position: fixed;
+            bottom: 40%;
+            right: 0;
+            width: 35px;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+
+
+        <!--? Header Code  -->
+        <header class="header_area">
+            <div id="header" class="header d-flex align-items-center fixed-top wrapper-bg box-shadow">
+                <div class="container-fluid container-xl d-flex align-items-center justify-content-between"><a
+                        class="logo d-flex align-items-center" href="/"><img src="/Images/logo.png"
+                            alt="Raghuma Logo"></a>
+                    <div class="" style="z-index: 9999;"><i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+                    </div>
+                    <nav id="navbar" class="navbar">
+                        <ul>
+                            <li><a class="active" href="/">Home</a></li>
+                            <li><a class="" href="/pages/about.html">About</a></li>
+                            <li class="dropdown"><a id="down" class="deactive"
+                                    href="../services/all-services.html"><span>Services</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul id="inner-down" class="dropdown-deactive">
+                                    <li class="dropdown myList"><a class="hidden" href="/"><span>Corporate
+                                                Catering</span> <i
+                                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                        <ul class="hidden">
+                                            <li><a href="./services/industrial-cafeteria-meals.html">Industrial
+                                                    Cafeteria
+                                                    Meals</a></li>
+                                            <li><a href="./services/corporate-cafeteria-meals.html">Corporate Cafeteria
+                                                    Meals</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown myList"><a class="hidden" href="/"><span>Industrial
+                                                Bakery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                        <ul class="hidden">
+                                            <li><a href="./services/bulk-bakery-supplies.html">Bulk Bakery Supplies</a>
+                                            </li>
+                                            <li><a href="./services/new-product-development.html">New Product
+                                                    Development</a>
+                                            </li>
+                                            <li><a href="./services/corporate-supplies.html">Corporate Supplies</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown myList"><a class="hidden" href="/"><span>Event Catering</span>
+                                            <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                        <ul class="hidden">
+                                            <li><a href="./services/catering-for-social-ceremonies.html">Catering for
+                                                    Social
+                                                    Ceremonies</a></li>
+                                            <li><a href="./services/catering-for-large-corporate.html">Catering for
+                                                    Large
+                                                    Corporate</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="dropdown"><a id="down" class="deactive" href="/"><span>Palkipreneures</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul id="inner-down" class="dropdown-deactive">
+                                    <li><a href="/training-development">Training, learning &amp; Growing</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="" href="/blog">Blog</a></li> -->
+                            <li><a class="" href="/pages/contact.html">Contact</a></li>
+                            <li><a class="get-a-quote bg-palki" href="./pages/free-quote.html">Get Free Quote</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+        <!--? Slider Code  -->
+        <div class="container-fluid p-0 mt-100">
+            <div class="swiper swiper-initialized swiper-horizontal banner-section swiper-backface-hidden">
+                <div class="swiper-wrapper"
+                    style="transform: translate3d(-4563px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
+                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="width: 1521px;">
+                        <div class="container-fluid p-0 slider-wrap">
+                            <div class="scale-up-center"><img src="./Images/slide1.jpg" alt="cds" width="100%"></div>
+                            <div class="container slider-text-wrap">
+                                <div class="row align-items-center mt-100">
+                                    <div class="col-7">
+                                        <div class="tracking-in-expand-fwd">
+                                            <h1 class="bold-9 font-urbanist clr-palki text-shadow">Cakes For All</h1>
+                                            <h1 class="bold-9 font-urbanist clr-blue text-shadow">Small celebrations or
+                                                Bulk <br>Requirements</h1>
+                                            <h3 class="bold-9 font-urbanist clr-blue sm-text-shadow">Evergreen flavours
+                                                &amp; customized designs <br>for every occasion</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" data-swiper-slide-index="3" style="width: 1521px;">
+                        <div class="container-fluid p-0 slider-wrap">
+                            <div class="scale-up-center"><img src="./Images/slide2.jpg" alt="cds" width="100%"></div>
+                            <div class="container slider-text-wrap pt-5">
+                                <div class="row mt-5">
+                                    <div class="col-6">
+                                        <div class="text-board">
+                                            <div class="tracking-in-expand-fwd">
+                                                <h1 class="clr-palki bold-9 font-urbanist text-shadow">Wholesomeness in
+                                                    food,</h1>
+                                                <h1 class="clr-palki bold-9 font-urbanist text-shadow">Warmth in service
+                                                </h1>
+                                                <h3 class="clr-blue bold-9 font-urbanist text-shadow">Best combination
+                                                    for
+                                                    cafeteria Meals</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="0" style="width: 1521px;">
+                        <div class="container-fluid p-0 slider-wrap">
+                            <div class="scale-up-center"><img src="./Images/slide3.jpg" alt="cds" width="100%"></div>
+                            <div class="container slider-text-wrap pt-5">
+                                <div class="row align-items-center mt-4">
+                                    <div class="col-6"></div>
+                                    <div class="col-6 text-center">
+                                        <div class="text-board">
+                                            <div class="tracking-in-expand-fwd" style="z-index: 5;">
+                                                <h1 class="bold-9 font-urbanist clr-blue text-shadow">Specialists in
+                                                    Hi-Teas</h1>
+                                                <h1 class="bold-9 font-urbanist clr-blue text-shadow">and Snacks
+                                                    Offerings
+                                                </h1>
+                                            </div><a href="/share-query"><button class="btn-palki slide-in-bottom mt-4"
+                                                    fdprocessedid="26pb3">Book Now</button></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="width: 1521px;">
+                        <div class="container-fluid p-0 slider-wrap">
+                            <div class="scale-up-center"><img src="./Images/slide4.jpg" alt="cds" width="100%"></div>
+                            <div class="container slider-text-wrap pt-4">
+                                <div class="row align-items-center mt-5">
+                                    <div class="col-5"></div>
+                                    <div class="col-7">
+                                        <div class="text-board">
+                                            <div class="tracking-in-expand-fwd">
+                                                <h1 class="bold-9 clr-blue font-urbanist text-shadow">Solutions For</h1>
+                                                <h1 class="bold-9 clr-blue font-urbanist text-shadow">Cafe, Restaurants
+                                                </h1>
+                                                <h1 class="bold-9 clr-blue font-urbanist text-shadow">Caters</h1>
+                                                <h3 class="bold-9 clr-palki font-urbanist sm-text-shadow">Wholesale
+                                                    Supplies / Contract Manufacturing</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                    <span class="swiper-pagination-bullet"></span><span
+                        class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                        class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--? Story  -->
+        <div class="container-fluid pt-5 pb-5">
+            <div class="container aos-init" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-md-6"><img src="./Images/story.png" alt="food" width="100%"></div>
+                    <div class="col-md-6">
+                        <h4 class="clr-palki bold-7 font-urbanist">Our Story</h4>
+                        <h2 class="bold-9">Served more than 100 + clients</h2>
+                        <div class="content-area text-justify p-2">
+                            <p>Welcome to Palki Food Services, your premier provider of catering solutions for various
+                                industries including corporate, industrial, and MNCs. With a track record of innovation
+                                and problem-solving, we pride ourselves on delivering top-notch services tailored to our
+                                clients' needs across different sectors and regions.</p>
+                            <div class="story-list-bg row align-items-center aos-init" data-aos="fade-right"><img
+                                    src="./Images/20y+.png" alt="food">
+                                <div class="story-list">20+ years experience in food industry</div>
+                            </div>
+                            <div class="story-list-bg row align-items-center aos-init" data-aos="fade-right"><img
+                                    src="./Images/24x7.png" alt="food">
+                                <div class="story-list">24/7 Client Support</div>
+                            </div>
+                            <div class="story-list-bg row align-items-center aos-init" data-aos="fade-right"><img
+                                    src="./Images/100+.png" alt="food">
+                                <div class="story-list">100+ registered business partners for best sourced ingredients
+                                </div>
+                            </div>
+                            <div class="story-list-bg row align-items-center aos-init" data-aos="fade-right"><img
+                                    src="./Images/kitchen.png" alt="food">
+                                <div class="story-list">25000 sqft. base kitchen</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <!--? Data  -->
+        <div class="container pt-5 pb-5">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="video-wrapper">
+                        <div style="width: 100%; height: 360px;"><video src="/videos/Palki-Food-Full-480-1.mp4"
+                                preload="auto" autoplay="" muted loop="" style="width: 100%; height: 100%;"></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="counter-section">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <div class="counter-inner"><img src="Images/family.png" alt="counter" width="100%">
+                                    <h4 class="clr-palki mt-2"><span>12,000</span>+</h4>
+                                    <p>Pax Family Day</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="counter-inner"><img src="Images/Diwali-Mela.png" alt="counter" width="100%">
+                                    <h4 class="clr-palki mt-2"><span>16,000</span>+</h4>
+                                    <p>Pax Diwali Mela</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="counter-inner"><img src="Images/Musical.png" alt="counter" width="100%">
+                                    <h4 class="clr-palki mt-2"><span>3,000</span>+</h4>
+                                    <p>Musical Concert</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="counter-inner"><img src="Images/holi.png" alt="counter" width="100%">
+                                    <h4 class="clr-palki mt-2"><span>1,200</span>+</h4>
+                                    <p>Holi Party</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--? Services  -->
+        <div class="container-fluid wrapper-bg pt-8 pb-5">
+            <h1 class="text-center clr-palki sm-text-shadow bold-7 font-urbanist">Our Services</h1>
+            <h6 class="text-center bold-9">What We Offer</h6>
+            <div class="container pt-5">
+                <div class="row" style="justify-content: space-around;">
+                    <div class="col-md-3 mb-4">
+                        <div class="service-card aos-init" data-aos="fade-up">
+                            <div class="service-img"><img src="Images/Corporate-Catering.png" alt="">
+                            </div>
+                            <div class="service-info">
+                                <h4 class="">Corporate Catering</h4>
+                                <p class="mt-4">We specialize in corporate catering services</p><a href="/services">
+                                    <!-- <h5 style="color: rgb(33, 37, 41); font-family: Nunito; font-size: 17px;">Read More
+                                    </h5> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="service-card aos-init" data-aos="fade-up">
+                            <div class="service-img"><img src="Images/Industrial-Bakery.png" alt="">
+                            </div>
+                            <div class="service-info">
+                                <h4 class="">Industrial Bakery</h4>
+                                <p class="mt-4">We specialize in industrial bakery services</p><a href="/services">
+                                    <!-- <h5 style="color: rgb(33, 37, 41); font-family: Nunito; font-size: 17px;">Read More
+                                    </h5> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="service-card aos-init" data-aos="fade-up">
+                            <div class="service-img"><img src="Images/event-catering.png" alt=""></div>
+                            <div class="service-info">
+                                <h4 class="">Event Catering</h4>
+                                <p class="mt-4">We specialize in event catering services</p><a href="/services">
+                                    <!-- <h5 style="color: rgb(33, 37, 41); font-family: Nunito; font-size: 17px;">Read More
+                                    </h5> -->
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><a href="./services/all-services.html"><button class="btn-palki"
+                            fdprocessedid="87ov2">View all
+                            Services</button></a></div>
+            </div>
+        </div>
+
+        <!--? Form  -->
+        <div class="container-fluid pt-5 pb-5 home-contact-bg"
+            style="background-image: url(&quot;/Images/book-event-bg.jpg&quot;);">
+            <h1 class="text-center clr-palki sm-text-shadow bold-7 font-urbanist">Share Query</h1>
+            <h6 class="text-center bold-9 aos-init" data-aos="fade-right">Details are Safe With Us!</h6>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-group"><label for="name">Name</label><input type="text" name="name"
+                                            class="form-control" placeholder="Enter name" fdprocessedid="dh4f8s"></div>
+                                </div>
+                                <div class="col-md-6 mb-4">
+                                    <div class="form-group"><label for="email">Email</label><input type="email"
+                                            name="email" class="form-control" placeholder="Enter Email"
+                                            fdprocessedid="rl92e"></div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="form-group"><label for="phone">Phone Number</label><input type="number"
+                                            name="phone" class="form-control" placeholder="Enter phone no"
+                                            fdprocessedid="l2l5a"></div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="form-group"><label for="event">Query</label><select name="query" id=""
+                                            class="form-control" fdprocessedid="m13xx">
+                                            <option value="">--- Type of Query ---</option>
+                                            <option value="corporate_meals">Corporate Cafeteria Meals</option>
+                                            <option value="industrial_meals">Industrial Canteen Meals</option>
+                                            <option value="outdoor-catering">Outdoor Catering</option>
+                                            <option value="bulk_backery">Bulk Bakery</option>
+                                            <option value="consultancy">Consultancy</option>
+                                            <option value="other">Any other</option>
+                                        </select></div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="form-group"><label for="person">No. of Pax</label><input type="number"
+                                            name="person" class="form-control" placeholder="No. of Pax"
+                                            fdprocessedid="m5hfer"></div>
+                                </div>
+                            </div>
+                            <div class="mb-4 mt-4 text-center"><button type="submit" class="btn-palki"
+                                    fdprocessedid="d7o0j">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+        <!--? Testimonials -->
+        <div class="container-fluid testimonial-bg pt-8 pb-5">
+            <div class="aos-init" data-aos="fade-down">
+                <h1 class="clr-palki bold-7 text-center sm-text-shadow font-urbanist">Testimonials</h1>
+                <h6 class="bold-9 text-center">What Our Clients Say About Us!</h6>
+            </div>
+            <div class="container pt-5 pb-4">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrapper p-4">
+                                <div class="testimonial-inner">
+                                    <div class="row align-items-center">
+                                        <img src="Images/user-BwmswBra.png" alt="waiter" class="testimonial-img">
+                                        <div class="testimonial-title">
+                                            <h4 class="bold-7">Mr. Shishir Shahapure</h4>
+                                            <p class="clr-palki">Samsung Electronics</p>
+                                        </div>
+                                        <p class="text-justify mt-4">we have very good experience with the vendor on
+                                            time delivery and verity is provided.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrapper p-4">
+                                <div class="testimonial-inner">
+                                    <div class="row align-items-center">
+                                        <img src="Images/user-BwmswBra.png" alt="waiter" class="testimonial-img">
+                                        <div class="testimonial-title">
+                                            <h4 class="bold-7">Parveen Deshwal</h4>
+                                            <p class="clr-palki">Capgemini</p>
+                                        </div>
+                                        <p class="text-justify mt-4">Good quality Food and hygienically maintain and
+                                            supportive staff.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrapper p-4">
+                                <div class="testimonial-inner">
+                                    <div class="row align-items-center">
+                                        <img src="Images/user-BwmswBra.png" alt="waiter" class="testimonial-img">
+                                        <div class="testimonial-title">
+                                            <h4 class="bold-7">Mr. Anil Sareen</h4>
+                                            <p class="clr-palki">EXL Services</p>
+                                        </div>
+                                        <p class="text-justify mt-4">Palki Food has been always very supportive, very
+                                            positive people to work with. I have seen them growing faster than anyone in
+                                            the food business.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrapper p-4">
+                                <div class="testimonial-inner">
+                                    <div class="row align-items-center">
+                                        <img src="Images/user-BwmswBra.png" alt="waiter" class="testimonial-img">
+                                        <div class="testimonial-title">
+                                            <h4 class="bold-7">Mr. Anil Sareen</h4>
+                                            <p class="clr-palki">EXL Services</p>
+                                        </div>
+                                        <p class="text-justify mt-4">Palki Food has been always very supportive, very
+                                            positive people to work with. I have seen them growing faster than anyone in
+                                            the food business.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--? Clients  -->
+        <div class="container-fluid pt-8">
+            <h1 class="text-center clr-palki bold-7 sm-text-shadow font-urbanist">Esteemed Clients</h1>
+            <h6 class="text-center bold-9">Serving the Leading Brands of Industry</h6>
+            <div class="container pt-4 aos-init" data-aos="fade-up">
+                <div class="client-container">
+                    <div class="row align-items-center">
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/ienergier-MPu_TvB3.png" alt="Ienergizer" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/ukg-NZ_hFhsV.png" alt="Samsung" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/ds_group-DD4t5MQb.png" alt="Ds group" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/npcl-BOjXkX3b.png" alt="npcl" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/samsung-BWAhj9PW.png" alt="Samsung" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/APL-CyLC2O1l.jpg" alt="apl" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/rms-COipPprf.png" alt="RMS Moody" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/kgl-DB5vIT4y.jpg" alt="KGL" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="Images/ingram-CxoMyOZi.png" alt="ingram" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/md-DNphJnNK.png" alt="md" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/genpact-C6idvZgu.png" alt="Genpact" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/applied-BYAlCtcv.jpg" alt="applied" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/qn-C5aPj3TY.jpeg" alt="QN" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/India-TV-COD8NbsG.jpg" alt="India TV" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/contata-Ovxbcs5D.png" alt="contata" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/lifeworks-C5WR2M2u.png" alt="Lifeworks" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/transsion-B1l4-NsN.png" alt="Transsion Holiding"
+                                    width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/winone-BxULJTWW.png" alt="Winone" width="100%"></div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/safexpress-D6v2FgID.png" alt="Safexpress" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/servosys-Cggdkzlb.png" alt="Servosys" width="100%">
+                            </div>
+                        </div>
+                        <div class="col-md-2 client-bg col-6 mb-4 rotate-in-2-cw">
+                            <div class=""><img src="./Images/noida-B0DwKLfb.jpg" alt="Noida Authority" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hider"><button class="btn-palki" fdprocessedid="g9xzgj">View all Client</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!--? Founding Member  -->
+        <div class="container-fluid our-team-bg pt-8 pb-5"
+            style="background-image: url(&quot;Images/our-pillars-bg.jpg&quot;);">
+            <h1 class="clr-palki text-center bold-7 sm-text-shadow font-urbanist">Founding Pillars</h1>
+            <h6 class="text-center bold-9">Our Skilled Team Sets the Standard</h6>
+            <div class="container pt-5 aos-init" data-aos="fade-up">
+                <!-- <div class="swiper swiper-initialized swiper-horizontal banner-section swiper-backface-hidden"> -->
+                <div class="swiper team-swiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <div class="swiper-wrapper"
+                        style="transition-duration: 0ms; transform: translate3d(-1326px, 0px, 0px); transition-delay: 0ms;">
+                        <div class="swiper-slide" style="width: 412px; margin-right: 30px;" data-swiper-slide-index="5">
+                            <div class="team-wrapper wrapper-bg text-center p-3"><img
+                                    src="./Images/Sunder-Chauhan-BsrQxrEm.jpg" alt="Director" width="100%">
+                                <div class="team-info">
+                                    <h5 class="mt-3">Mr. Sunder Chauhan</h5>
+                                    <p class="clr-palki">Executive Chef Founding Member</p>
+                                    <p>Graduated in 1998 and worked with esteemed names of the industry like Shiva
+                                        Continental, Connaught Castle, and Ashoka Hotel. He is one of the pillars of
+                                        Palki Food Services and engaged with the growth since establishment till today,
+                                        with all his spirit and never die attitude.You may find him playing cricket or
+                                        listening to Pahadi music when not in Kitchen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 412px; margin-right: 30px;" data-swiper-slide-index="0">
+                            <div class="team-wrapper wrapper-bg text-center p-3"><img
+                                    src="./Images/Anil-Shukla-CtHbVxa-.jpg" alt="Director" width="100%">
+                                <div class="team-info">
+                                    <h5 class="mt-3">Mr. Anil Shukla</h5>
+                                    <p class="clr-palki">Director</p>
+                                    <p>Graduated from Jamia Milia University,had that instinct for entrepreneurship at
+                                        an early age.Started first business at the age of 22, now carry experience of 25
+                                        years in the food business.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-prev" style="width: 412px; margin-right: 30px;"
+                            data-swiper-slide-index="1">
+                            <div class="team-wrapper wrapper-bg text-center p-3"><img
+                                    src="./Images/Sanjay-Shukla-D463I8Wf.jpg" alt="Director" width="100%">
+                                <div class="team-info">
+                                    <h5 class="mt-3">Mr. Snajay Shukla</h5>
+                                    <p class="clr-palki">Director</p>
+                                    <p>Graduated from NIFT Delhi , always has that creative narration in mind. Did HACCP
+                                        and Food Safety Graduation from London. experience of 25 years in Food
+                                        Bussiness.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active" style="width: 412px; margin-right: 30px;"
+                            data-swiper-slide-index="2">
+                            <div class="team-wrapper wrapper-bg text-center p-3"><img
+                                    src="./Images/Abhishek-Shukla-B11jm3-j.jpg" alt="Director" width="100%">
+                                <div class="team-info">
+                                    <h5 class="mt-3">Mr. Abhishek Shukla</h5>
+                                    <p class="clr-palki">Director</p>
+                                    <p>Graduated in 2016 from IHM Lucknow, Mr. Abhishek gained valuable industrial
+                                        training experience at Shangri-La Eros Hotel. He further enhanced his business
+                                        acumen by pursuing an MBA in Family Business Management from S.P. Jain
+                                        Institute, Mumbai. Currently, overseeing Operations and New Product Development
+                                        at the company.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 412px; margin-right: 30px;"
+                            data-swiper-slide-index="3">
+                            <div class="team-wrapper wrapper-bg text-center p-3"><img
+                                    src="./Images/Lalit-Jain-C5KM8ROG.jpeg" alt="Director" width="100%">
+                                <div class="team-info">
+                                    <h5 class="mt-3">Mr. Lalit Jain</h5>
+                                    <p class="clr-palki">Honorable Mentor Advisory Board Member</p>
+                                    <p>Graduated in 1976 from IHM-Delhi, Pusa Road. Worked for numerous five-star hotels
+                                        in India and abroad having experience as General Manager of Asian Games Village
+                                        and established WIMPPY’S in India, now working as a consultant and helping the
+                                        brands to establish. From establishing kitchen to providing us the best talent
+                                        during the initial days to as a member of the Advisory Board he has played the
+                                        role of a troubleshooter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 412px; margin-right: 30px;" data-swiper-slide-index="4">
+                            <div class="team-wrapper wrapper-bg text-center p-3">
+
+                                <img src="./Images/RP-Sharma-D8weSy6-.jpeg" alt="Director" width="100%">
+                                <div class="team-info">
+                                    <h5 class="mt-3">Mr. R.P Sharma</h5>
+                                    <p class="clr-palki">Honorable Mentor Advisory Board Member</p>
+                                    <p>From graduating in 1981 from IHM Lucknow to taking the position of Pastry Chef
+                                        Oberoi’s Group and then Corporate Chef with AB Mauri, Tropolite Goodrich, he
+                                        participated not only as a career choice but for the love of bakery. Now, an
+                                        active member of ICF and jury at the Skill Council of India Mr. Sharma is a
+                                        renowned name in the Indian Bakery Industry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 
+        <div class="container-fluid pt-8 pb-5">
+            <h1 class="text-center clr-palki bold-7 sm-text-shadow font-urbanist">Blogs and Updates</h1>
+            <h6 class="text-center bold-9">Be First Who Read News</h6>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="inner-blog-wrapper aos-init" data-aos="fade-up"><img
+                                src="/public/images/blogs/1751992389.png" alt="blog" width="100%">
+                            <div class="blog-date"><span style="font-size: 23px;">16</span><br>sep</div>
+                            <div class="blog-info"><a href="/blog/top-corporate-event-caterers-in-Greater-Noida">
+                                    <h5 class="bold-7 clr-black">Beyond Buffets: Redefining Corporate Event Catering in
+                                        Greater Noida with Palki Food Services</h5>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="inner-blog-wrapper aos-init" data-aos="fade-up"><img
+                                src="/public/images/blogs/1751991481.png" alt="blog" width="100%">
+                            <div class="blog-date"><span style="font-size: 23px;">16</span><br>sep</div>
+                            <div class="blog-info"><a href="/blog/business-catering-provider-in-Greater-Noida">
+                                    <h5 class="bold-7 clr-black">Breaking Bread, Building Brands: Business Catering
+                                        Provider in Greater Noida Gets a Gourmet Upgrade</h5>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="inner-blog-wrapper aos-init" data-aos="fade-up"><img
+                                src="/public/images/blogs/1751904589.png" alt="blog" width="100%">
+                            <div class="blog-date"><span style="font-size: 23px;">16</span><br>sep</div>
+                            <div class="blog-info"><a href="/blog/catering-services-for-ceremonies-Noida">
+                                    <h5 class="bold-7 clr-black">From Taste to Tradition: Elevating Ceremonial Moments
+                                        with Palki Food Services in Noida</h5>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <footer id="footer" class="footer"
+            style="background-image: url(&quot;https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-hd-pastel-pink-gold-marble-background-image_2440700.jpg&quot;);">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-12 footer-info"><a class="logo d-flex align-items-center" href="/"><img
+                                src="Images/logo.png" alt="tecroost" height="180"></a>
+                        <p class="text-justify clr-black">Palki Food Services is providing Catering services to
+                            employees on daily basis in different industries.</p>
+                        <div class="social-links d-flex mt-4">
+                            <a class="twitter" href="https://x.com/Palkifood">
+                                <i class="bi bi-twitter clr-palki"></i></a><a class="facebook"
+                                href="https://www.facebook.com/PalkiFoodServices"><i
+                                    class="bi bi-facebook clr-palki"></i></a><a class="instagram"
+                                href="https://www.instagram.com/palkifoodsservices/"><i
+                                    class="bi bi-instagram clr-palki"></i></a><a class="linkedin"
+                                href="https://www.linkedin.com/company/palki-food-services/"><i
+                                    class="bi bi-linkedin clr-palki"></i></a><a class="youtube"
+                                href="https://www.youtube.com/@palkifoodservices"><i
+                                    class="bi bi-youtube clr-palki"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-5 footer-links">
+                        <h4 class="footer-title">Useful Links</h4>
+                        <ul class="footer-link">
+                            <li><i class="fa-solid fa-angle-right clr-palki"></i> <a href="/">Home</a></li>
+                            <li><i class="fa-solid fa-angle-right clr-palki"></i> <a href="./pages/about.html">About
+                                    us</a></li>
+                            <li><i class="fa-solid fa-angle-right clr-palki"></i> <a
+                                    href="./services/all-services.html">Our Services</a>
+                            </li>
+                            <!-- <li><i class="fa-solid fa-angle-right clr-palki"></i> <a href="/blog">Blog</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-7 footer-links">
+                        <h4 class="footer-title">Contact Us</h4>
+                        <p class="clr-black"><i class="fa-solid fa-location clr-palki"></i>
+                            GT-54, Sector-70 Noida
+                            Gautam Buddh Nagar
+                            (U.P) 201301
+                            <br><br><i class="fa-solid fa-phone clr-palki"></i>+91 9220979389<br><br><i
+                                class="fa-solid fa-envelope clr-palki"></i>
+
+                            <a href="mailto:laxmifoodservice@gmail.com" class="email-text">
+                                laxmifoodservice@gmail.com
+                            </a><br>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.992276023362!2d77.4546050366629!3d28.54720800822492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55c26ffff89%3A0xaef9a254844ae6e7!2sPalki%20Food%20Services%20The%20Best%20Catering%20Services!5e0!3m2!1sen!2sin!4v1719900813814!5m2!1sen!2sin"
+                            loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" width="100%"
+                            height="250" style="display: initial;"></iframe></div>
+                </div>
+            </div>
+            <div class="container-fluid bg-palki footer-copyright p-3">
+                <div class="copyright clr-white">© Copyright 2026 <strong><span class="">Laxmi Food
+                            Service</span></strong>.
+                    All Rights Reserved</div>
+                <!-- <div class="credits clr-white">Designed &amp; Developed by <a class=""
+                        href="https://livetechservices.in">LTS</a></div> -->
+            </div>
+        </footer>
+
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./javascripts/swiper.js"></script>
+<script src="./javascripts/mobNavbar.js"></script>
+
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    class CounterAnimation {
+        constructor() {
+            this.counters = document.querySelectorAll('.counter-section h4 span');
+            this.observer = null;
+            this.hasAnimated = false;
+            this.init();
+        }
+
+        init() {
+            if (this.counters.length === 0) return;
+
+            // Check if IntersectionObserver is supported
+            if ('IntersectionObserver' in window) {
+                this.setupObserver();
+            } else {
+                // Fallback for older browsers
+                this.animateAllCounters();
+            }
+        }
+
+        setupObserver() {
+            this.observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !this.hasAnimated) {
+                        this.animateAllCounters();
+                        this.hasAnimated = true;
+                        this.observer.disconnect();
+                    }
+                });
+            }, {
+                threshold: 0.3,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            const counterSection = document.querySelector('.counter-section');
+            if (counterSection) {
+                this.observer.observe(counterSection);
+            }
+        }
+
+        animateAllCounters() {
+            this.counters.forEach((counter, index) => {
+                const originalText = counter.textContent;
+                const targetValue = parseInt(originalText.replace(/,/g, ''));
+
+                if (!isNaN(targetValue)) {
+                    // Reset counter
+                    counter.textContent = '0';
+
+                    // Start animation with staggered delay
+                    setTimeout(() => {
+                        this.animateCounter(counter, 0, targetValue, 2000);
+                    }, index * 300);
+                }
+            });
+        }
+
+        animateCounter(element, start, end, duration) {
+            const startTime = performance.now();
+
+            const updateCounter = (currentTime) => {
+                const elapsedTime = currentTime - startTime;
+                const progress = Math.min(elapsedTime / duration, 1);
+
+                // Easing function for smooth animation
+                const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+                const currentValue = Math.floor(easeOutQuart * (end - start) + start);
+
+                // Format with commas
+                element.textContent = currentValue.toLocaleString();
+
+                if (progress < 1) {
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = end.toLocaleString();
+                }
+            };
+
+            requestAnimationFrame(updateCounter);
+        }
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize AOS
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        }
+
+        // Initialize counters
+        new CounterAnimation();
+
+        // Reinitialize if needed (for SPA)
+        document.addEventListener('pageChanged', () => {
+            new CounterAnimation();
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Main Slider (Banner)
+        const mainSwiper = new Swiper('.banner-section', {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            centeredSlides: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        // Testimonials Slider
+        const testimonialSwiper = new Swiper('.testimonial-swiper', {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                }
+            }
+        });
+
+        // Team/Founding Members Slider
+        const teamSwiper = new Swiper('.team-swiper', {
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                }
+            }
+        });
+
+        // Initialize AOS
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        }
+    });
+</script>
+
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true,     // whether animation should happen only once
+    });
+</script>
+
+</html>

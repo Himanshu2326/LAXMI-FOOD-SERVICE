@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            transition: opacity ease-in 0.2s;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+    <link rel="stylesheet" href=".././stylesheets/style.css">
+    <link rel="stylesheet" href=".././stylesheets/style2.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Catering for Large Corporate</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;1,500&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Young+Serif" rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&amp;display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap"
+        rel="stylesheet">
+             <!--? Fonts  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&amp;display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .whatsapp {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            height: 80px;
+            width: 70px;
+            z-index: 9999;
+        }
+
+        .social-media-bg {
+            position: fixed;
+            bottom: 40%;
+            right: 0;
+            width: 35px;
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="app">
+
+       <!--? Header Code  -->
+        <header class="header_area">
+            <div id="header" class="header d-flex align-items-center fixed-top wrapper-bg box-shadow">
+                <div class="container-fluid container-xl d-flex align-items-center justify-content-between"><a
+                        class="logo d-flex align-items-center" href="/"><img src="/Images/logo.png"
+                            alt="Raghuma Logo"></a>
+                    <div class="" style="z-index: 9999;"><i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+                    </div>
+                    <nav id="navbar" class="navbar">
+                        <ul>
+                            <li><a class="active" href="/">Home</a></li>
+                            <li><a class="" href="../pages/about.html">About</a></li>
+                            <li class="dropdown"><a id="down" class="deactive" href="./all-services.html"><span>Services</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul id="inner-down" class="dropdown-deactive">
+                                    <li class="dropdown myList"><a class="hidden" href="/"><span>Corporate
+                                                Catering</span> <i
+                                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                        <ul class="hidden">
+                                            <li><a href="./industrial-cafeteria-meals.html">Industrial Cafeteria
+                                                    Meals</a></li>
+                                            <li><a href="./corporate-cafeteria-meals.html">Corporate Cafeteria
+                                                    Meals</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown myList"><a class="hidden" href="/"><span>Industrial
+                                                Bakery</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                        <ul class="hidden">
+                                            <li><a href="./bulk-bakery-supplies.html">Bulk Bakery Supplies</a></li>
+                                            <li><a href="./new-product-development.html">New
+                                                    Product Development</a>
+                                            </li>
+                                            <li><a href="./corporate-supplies.html">Corporate
+                                                    Supplies</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown myList"><a class="hidden" href="/"><span>Event Catering</span>
+                                            <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                        <ul class="hidden">
+                                            <li><a href="./catering-for-social-ceremonies.html">Catering for Social
+                                                    Ceremonies</a></li>
+                                            <li><a href="./catering-for-large-corporate.html">Catering for Large
+                                                    Corporate</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li class="dropdown"><a id="down" class="deactive" href="/"><span>Palkipreneures</span> <i
+                                        class="bi bi-chevron-down dropdown-indicator"></i></a>
+                                <ul id="inner-down" class="dropdown-deactive">
+                                    <li><a href="/training-development">Training, learning &amp; Growing</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="" href="/blog">Blog</a></li> -->
+                            <li><a class="" href="../pages/contact.html">Contact</a></li>
+                            <li><a class="get-a-quote bg-palki" href="../pages/free-quote.html">Get Free Quote</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!--? Top Image  -->
+        <div class="container-fluid p-0 mt-100"><img src="../Images/Large-Corporate-Events.jpg" alt="banner"
+                width="100%"></div>
+
+        <div class="container-fluid breadcrumb-bg p-3">
+            <div class="container"><i class="fa fa-home clr-palki"></i><a href="/"><span
+                        class="clr-palki">Home</span></a><i class="fa fa-angle-right"></i><a href="/services"><span
+                        class="clr-palki">Services</span></a><i class="fa fa-angle-right"></i><span
+                    class="clr-palki">event-catering</span><i class="fa fa-angle-right"></i><span class="">Catering for
+                    Large Corporate</span></div>
+        </div>
+
+
+        <!--? Catering for Social Ceremonies  -->
+        <div class="container-fluid pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mb-4"><img src="../Images/1714374639.jpg" alt="event" width="100%"
+                            style="border-radius: 8px;">
+                        <div class="review-box mt-100">
+                            <div class="row">
+                                <div class="col-4"><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+                                        alt="google" width="100%"></div>
+                                <div class="col-8">
+                                    <h4 class="">Client Reviews</h4><span>(4).</span><i class="fa fa-star"></i><i
+                                        class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                        class="fa-regular fa-star"></i>
+                                    <div class=""><a
+                                            href="https://www.google.com/search?gs_ssp=eJwFwUsOQDAQANDYikPUwtrQUeEIbjFMy8SnE0R6fO_lRb3WjWqb3BYUsrGCZAdYfPBs5x4DUT9C6tC1OMPgmBx2aKdS6djFhBj5MXKxkNFbPnq9OeSU1_MPj8cb5w&amp;q=palki+foods+india+private+limited&amp;oq=palki+foods&amp;gs_lcrp=EgZjaHJvbWUqDQgBEC4YrwEYxwEYgAQyBggAEEUYOTINCAEQLhivARjHARiABDIHCAIQABiABDIKCAMQABiiBBiJBTIKCAQQABiABBiiBDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDg5NjNqMGo3qAIAsAIA&amp;sourceid=chrome&amp;ie=UTF-8"
+                                            target="_blank"><button class="btn btn-primary" fdprocessedid="h5a4o">Read
+                                                Review</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6 text-justify">
+                        <h4 class="text-center clr-palki bold-7">Catering for Large Corporate</h4>
+                        <div>
+                            <p>We also specialize in catering for large corporate events, annual days, founder's Day
+                                celebrations, festival parties, and R&amp;R events. Our expert team ensures seamless
+                                service and delectable cuisine to make your gatherings unforgettable. Trust us to
+                                elevate your event with our exceptional catering services.</p>
+                        </div>
+                        <div>
+                            <p></p>
+                        </div>
+                        <div class="mt-4">
+                            <p><b>Share</b></p>
+                            <div class="row">
+                                <div class="share-icon"><a
+                                        href="https://twitter.com/share?text=Catering for Large Corporate&amp;url=https://palkifoods.in/service/catering-for-large-corporate"
+                                        target="_blank"><svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon-s css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="XIcon"
+                                            style="color: rgb(34, 34, 34);">
+                                            <path
+                                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                            </path>
+                                        </svg></a></div>
+                                <div class="share-icon"><a
+                                        href="https://www.linkedin.com/sharing/share-offsite/?url=https://palkifoods.in/service/catering-for-large-corporate&amp;title=Catering for Large Corporate"
+                                        target="_blank"><svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon-s css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="LinkedInIcon" style="color: rgb(34, 34, 34);">
+                                            <path
+                                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z">
+                                            </path>
+                                        </svg></a></div>
+                                <div class="share-icon"><a href="#"><svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon-s css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="InstagramIcon" style="color: rgb(34, 34, 34);">
+                                            <path
+                                                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+                                            </path>
+                                        </svg></a></div>
+                                <div class="share-icon"><a
+                                        href="https://www.facebook.com/sharer.php?u=https://palkifoods.in/service/catering-for-large-corporate"><svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon-s css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="FacebookIcon" style="color: rgb(34, 34, 34);">
+                                            <path
+                                                d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z">
+                                            </path>
+                                        </svg></a></div>
+                                <div class="share-icon"><a
+                                        href="https://api.whatsapp.com/send?text=Catering for Large Corporate|https://palkifoods.in/service/catering-for-large-corporate"
+                                        target="_blank"><svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium icon-s css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="WhatsAppIcon" style="color: rgb(34, 34, 34);">
+                                            <path
+                                                d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z">
+                                            </path>
+                                        </svg></a></div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <hr>
+                            <h4 class="bold-7">Related Services</h4>
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="related-service mb-4"><img src="../Images/1714374373.jpg" alt="event"
+                                            width="100%" style="border-radius: 10px;"><a
+                                            href="/service/catering-for-social-ceremonies">
+                                            <div class="p-3 text-center anim-box">
+                                                <h5 class="bold-7 clr-white">Catering for Social Ceremonies</h5>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--? Latest Events -->
+        <div class="container-fluid wrapper-bg pt-8 pb-5">
+            <h2 class="text-center clr-palki sm-text-shadow bold-7 font-charm">Latest Events</h2>
+            <h6 class="text-center bold-9">Our Social &amp; Professional Events Gallery</h6>
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <div class="gallery-bg"><img src="../Images/1715316904.jpg" alt="event" width="100%"
+                                style="border-radius: 10px;"></div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="gallery-bg"><img src="../Images/1715316887.jpg" alt="event" width="100%"
+                                style="border-radius: 10px;"></div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="gallery-bg"><img src="../Images/1715316875.jpg" alt="event" width="100%"
+                                style="border-radius: 10px;"></div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="gallery-bg"><img src="../Images/1715316838.jpg" alt="event" width="100%"
+                                style="border-radius: 10px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--? FAQs  -->
+        <div class="container-fluid pt-5 pb-5">
+            <h2 class="clr-palki text-center font-charm">Frequently Asked Questions</h2>
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="faq-accordion">
+                            <!-- FAQ Item 1 -->
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>Can you handle large-scale corporate catering events?</span>
+                                    <div class="faq-icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes, Palki Food Services specializes in large-scale corporate catering events. We
+                                        manage everything from menu planning to food preparation and service, ensuring a
+                                        seamless and professional experience for events of any size, including
+                                        conferences, seminars, and corporate parties.</p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>What kind of support do you provide during large corporate catering
+                                        events?</span>
+                                    <div class="faq-icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>We provide comprehensive support during large corporate catering events,
+                                        including on-site staff for setup, service, and cleanup. Our team ensures that
+                                        every aspect of the catering is executed flawlessly, allowing you to focus on
+                                        the success of your event.</p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <span>What areas do you serve with your catering and cafeteria services?</span>
+                                    <div class="faq-icon">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Palki Food Services primarily serves the Noida and Greater Noida regions, but we
+                                        are equipped to handle events and provide services across the Delhi NCR area. We
+                                        are committed to delivering high-quality food services wherever your business or
+                                        event is located.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+
+         <!--? Footer  -->
+        <footer id="footer" class="footer"
+            style="background-image: url(&quot;https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-hd-pastel-pink-gold-marble-background-image_2440700.jpg&quot;);">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-md-12 footer-info"><a class="logo d-flex align-items-center" href="/"><img
+                                src="/Images/logo.png" alt="tecroost" height="180"></a>
+                        <p class="text-justify clr-black">Palki Food Services is providing Catering services to
+                            employees on daily basis in different industries.</p>
+                        <div class="social-links d-flex mt-4">
+                            <a class="twitter" href="https://x.com/Palkifood">
+                                <i class="bi bi-twitter clr-palki"></i></a><a class="facebook"
+                                href="https://www.facebook.com/PalkiFoodServices"><i
+                                    class="bi bi-facebook clr-palki"></i></a><a class="instagram"
+                                href="https://www.instagram.com/palkifoodsservices/"><i
+                                    class="bi bi-instagram clr-palki"></i></a><a class="linkedin"
+                                href="https://www.linkedin.com/company/palki-food-services/"><i
+                                    class="bi bi-linkedin clr-palki"></i></a><a class="youtube"
+                                href="https://www.youtube.com/@palkifoodservices"><i
+                                    class="bi bi-youtube clr-palki"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-5 footer-links">
+                        <h4 class="footer-title">Useful Links</h4>
+                        <ul class="footer-link">
+                            <li><i class="fa-solid fa-angle-right clr-palki"></i> <a href="/">Home</a></li>
+                            <li><i class="fa-solid fa-angle-right clr-palki"></i> <a href="../pages/about.html">About us</a></li>
+                            <li><i class="fa-solid fa-angle-right clr-palki"></i> <a href="../services/all-services.html">Our Services</a>
+                            </li>
+                            <!-- <li><i class="fa-solid fa-angle-right clr-palki"></i> <a href="/blog">Blog</a></li> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-7 footer-links">
+                        <h4 class="footer-title">Contact Us</h4>
+                        <p class="clr-black"><i class="fa-solid fa-location clr-palki"></i>
+                            GT-54, Sector-70 Noida
+                            Gautam Buddh Nagar
+                            (U.P) 201301
+                            <br><br><i class="fa-solid fa-phone clr-palki"></i>+91 9220979389<br><br><i
+                                class="fa-solid fa-envelope clr-palki"></i>
+
+                            <a href="mailto:laxmifoodservice@gmail.com" class="email-text">
+                                laxmifoodservice@gmail.com
+                            </a><br>
+                        </p>
+                    </div>
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1263.992276023362!2d77.4546050366629!3d28.54720800822492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce55c26ffff89%3A0xaef9a254844ae6e7!2sPalki%20Food%20Services%20The%20Best%20Catering%20Services!5e0!3m2!1sen!2sin!4v1719900813814!5m2!1sen!2sin"
+                            loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" width="100%"
+                            height="250" style="display: initial;"></iframe></div>
+                </div>
+            </div>
+            <div class="container-fluid bg-palki footer-copyright p-3">
+                <div class="copyright clr-white">© Copyright 2026 <strong><span class="">Laxmi Food
+                            Service</span></strong>.
+                    All Rights Reserved</div>
+                <!-- <div class="credits clr-white">Designed &amp; Developed by <a class=""
+                        href="https://livetechservices.in">LTS</a></div> -->
+            </div>
+        </footer>
+
+
+
+
+    </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src=".././javascripts/swiper.js"></script>
+<script src=".././javascripts/accordian.js"></script>
+<script src=".././javascripts/mobNavbar.js"></script>
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000, // animation duration in ms
+        once: true,     // whether animation should happen only once
+    });
+</script>
+
+
+</html>
