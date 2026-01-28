@@ -362,11 +362,14 @@
 
 .counter-inner {
     padding: 20px;
-    background-color: #fff;
+    color: #fff;
     border-radius: 10px;
     text-align: center;
+    justify-content: center;
     min-height: 208px;
-    box-shadow: 0 0 60px #00000014
+    /* box-shadow: 0 0 60px #00000014; */
+    display: flex;
+    flex-direction: column;
 }
 
 .client-container {
@@ -523,7 +526,7 @@
     font-size: 22px;
     padding: 0 0 5px;
     margin: 0 0 30px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     color: #cd3131;
     display: inline-block
 }
@@ -669,7 +672,7 @@
 }
 
 .team-wrapper {
-    min-height: 550px;
+    min-height: 450px;
     border-radius: 8px
 }
 
@@ -684,7 +687,8 @@
 .team-info h5 {
     font-family: Nunito;
     text-align: center;
-    font-weight: 600
+    font-weight: 600;
+    
 }
 
 .inner-blog-wrapper {
@@ -776,7 +780,8 @@
 }
 
 .testimonial-bg {
-    background-image: linear-gradient(4deg,#f1abab,transparent)
+    /* background-image: linear-gradient(4deg,#f1abab,transparent) */
+        background: #f6f6f6;
 }
 
 .box-shadow {
@@ -880,8 +885,9 @@
 }
 
 .scale-up-center {
-    -webkit-animation: scale-up-center 4s cubic-bezier(.39,.575,.565,1) both;
-    animation: scale-up-center 4s cubic-bezier(.39,.575,.565,1) both
+    /* -webkit-animation: scale-up-center 4s cubic-bezier(.39,.575,.565,1) both;
+    animation: scale-up-center 4s cubic-bezier(.39,.575,.565,1) both */
+    background-size: cover center/cover;
 }
 
 @-webkit-keyframes scale-up-center {
