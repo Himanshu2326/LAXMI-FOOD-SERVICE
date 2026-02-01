@@ -801,13 +801,13 @@
 
 .phone-icon {
     position: fixed;
-    bottom: 22%;
+     bottom: 25px;
     left: 15px;
     height: 55px;
     width: 55px;
     border-radius: 50%;
     z-index: 9999;
-    background-color: #cd3131;
+    /* background-color: #cd3131; */
     text-align: center;
     color: #fff;
     font-size: 23px;
@@ -815,7 +815,7 @@
 }
 
 .phone-wave {
-    background-color: #f77979
+    background-color: #dbcebb
 }
 
 .phone-icon i {
