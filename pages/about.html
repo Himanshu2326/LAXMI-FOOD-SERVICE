@@ -67,6 +67,230 @@
             z-index: 999;
         }
     </style>
+    <style>
+        .modern-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        .modern-card {
+            background: white;
+            border-radius: 24px;
+            padding: 40px 30px 30px;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .modern-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.08);
+            border-color: rgba(59, 130, 246, 0.1);
+        }
+
+        .modern-icon-wrapper {
+            position: relative;
+            margin-bottom: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .modern-icon-inner {
+            display: inline-block;
+            position: relative;
+        }
+
+        .modern-icon-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            transition: all 0.3s ease;
+        }
+
+        .modern-card:hover .modern-icon-circle {
+            transform: scale(1.1);
+        }
+
+        .vision-icon {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+
+        .mission-icon {
+            background: linear-gradient(135deg, #10b981, #059669);
+        }
+
+        .goal-icon {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+        }
+
+        .modern-icon-circle::before {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            background: inherit;
+            border-radius: 50%;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .modern-icon-img {
+            width: 48px;
+            height: 48px;
+            filter: brightness(0) invert(1);
+            z-index: 3;
+            position: relative;
+            object-fit: contain;
+        }
+
+        .modern-card-body {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .modern-card-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.025em;
+        }
+
+        .text-gradient-primary {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-secondary {
+            background: linear-gradient(135deg, #10b981, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .text-gradient-accent {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .modern-card-text {
+            color: #4b5563;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: 0;
+            font-weight: 400;
+        }
+
+        .modern-card-text strong {
+            color: #1f2937;
+            font-weight: 600;
+        }
+
+        .modern-card-decoration {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, transparent 50%, rgba(59, 130, 246, 0.03) 50%);
+            border-radius: 0 24px 0 100px;
+            pointer-events: none;
+        }
+
+        /* Ensure all cards have the same height */
+        .row.g-4.g-lg-5 {
+            align-items: stretch;
+        }
+
+        .modern-card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .modern-card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .modern-card-text {
+            margin-top: auto;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .modern-section {
+                padding: 60px 0 !important;
+            }
+
+            .modern-card {
+                padding: 30px 20px;
+                border-radius: 20px;
+            }
+
+            .modern-icon-circle {
+                width: 90px;
+                height: 90px;
+            }
+
+            .modern-icon-img {
+                width: 42px;
+                height: 42px;
+            }
+
+            .modern-card-title {
+                font-size: 1.5rem;
+            }
+
+            .modern-card-text {
+                font-size: 1rem;
+            }
+        }
+
+        /* Animation on load */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .modern-card {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .modern-card:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .modern-card:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+    </style>
 </head>
 
 <body>
@@ -146,8 +370,8 @@
 
 
         <!--? Top Image  -->
-        <div class="container-fluid p-0 mt-100"><img src="../Images/About-banner-DftrJXeT.jpg" alt="banner"
-                width="100%"></div>
+        <div class="container-fluid p-0 mt-100"><img src="../Images/Gemini_Generated_Image_kah09rkah09rkah0.png"
+                alt="banner" width="100%"></div>
 
 
         <div class="container-fluid breadcrumb-bg p-3">
@@ -266,46 +490,74 @@
 
 
         <!--? Vision  -->
-        <div class="container-fluid pt-5 wrapper-bg">
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-md-4 mb-100">
-                        <div class="vision-bg box-shadow">
-                            <div class="text-center vision-icon box-shadow"><img src="../Images/Vission-2pnF_ibB.png"
-                                    alt="vision" width="80"></div>
-                            <div class="text-center vision-padding bg-white height-180">
-                                <h4 class="bold-7">Our Vision</h4>
-                                <p>We aim to reach the global platform of the food &amp; beverage industry to make a
-                                    mark through our valuable products &amp; services having passion with honest
-                                    practices.</p>
+        <div class="container-fluid modern-section py-5">
+            <div class="container py-lg-5">
+                <div class="row g-4 g-lg-5">
+                    <!-- Vision Card -->
+                    <div class="col-md-4">
+                        <div class="modern-card card-hover">
+                            <div class="modern-icon-wrapper">
+                                <div class="modern-icon-inner">
+                                    <div class="modern-icon-circle "
+                                        style="  background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                                        <img src="../Images/Vission-2pnF_ibB.png" alt="Vision icon"
+                                            class="modern-icon-img">
+                                    </div>
+                                </div>
                             </div>
+                            <div class="modern-card-body">
+                                <h3 class="modern-card-title text-gradient-primary">Our Vision</h3>
+                                <p class="modern-card-text font-urbanist">We aim to reach the global platform of the food & beverage
+                                    industry to make a mark through our valuable products & services with passion and
+                                    honest practices.</p>
+                            </div>
+                            <div class="modern-card-decoration"></div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-100">
-                        <div class="vision-bg box-shadow">
-                            <div class="text-center vision-icon box-shadow"><img src="../Images/Mission-DLdAj1Lt.png"
-                                    alt="vision" width="80"></div>
-                            <div class="text-center vision-padding bg-white height-180 box-shadow">
-                                <h4 class="bold-7">Our Mission</h4>
-                                <p>Eliminate any Possible chance of error in achieving the vision by involving
-                                    technology, upgradation of staff skillset &amp; the latest equipment to achieve that
-                                    broader aspect.</p>
+
+                    <!-- Mission Card -->
+                    <div class="col-md-4">
+                        <div class="modern-card card-hover">
+                            <div class="modern-icon-wrapper">
+                                <div class="modern-icon-inner">
+                                    <div class="modern-icon-circle mission-icon">
+                                        <img src="../Images/Mission-DLdAj1Lt.png" alt="Mission icon"
+                                            class="modern-icon-img">
+                                    </div>
+                                </div>
                             </div>
+                            <div class="modern-card-body">
+                                <h3 class="modern-card-title text-gradient-secondary">Our Mission</h3>
+                                <p class="modern-card-text font-urbanist">Eliminate any possible chance of error by leveraging
+                                    technology, upgrading staff skills, and utilizing the latest equipment to achieve
+                                    broader objectives.</p>
+                            </div>
+                            <div class="modern-card-decoration"></div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-100">
-                        <div class="vision-bg box-shadow">
-                            <div class="text-center vision-icon box-shadow"><img src="../Images/Goal-rklP9npz.png"
-                                    alt="vision" width="80"></div>
-                            <div class="text-center vision-padding bg-white height-180 box-shadow">
-                                <h4 class="bold-7">Our Goal</h4>
-                                <p>Run daily operations on ZETOS-Zero Error Time Oriented System</p>
+
+                    <!-- Goal Card -->
+                    <div class="col-md-4">
+                        <div class="modern-card card-hover">
+                            <div class="modern-icon-wrapper">
+                                <div class="modern-icon-inner">
+                                    <div class="modern-icon-circle goal-icon">
+                                        <img src="../Images/Goal-rklP9npz.png" alt="Goal icon" class="modern-icon-img">
+                                    </div>
+                                </div>
                             </div>
+                            <div class="modern-card-body">
+                                <h3 class="modern-card-title text-gradient-accent">Our Goal</h3>
+                                <p class="modern-card-text font-urbanist">Operate daily on the ZETOS principle: Zero Error
+                                        Time Oriented System for optimal efficiency and quality.</p>
+                            </div>
+                            <div class="modern-card-decoration"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
         <!--? Recoginition   -->
         <div class="container-fluid pt-8 pb-5">
