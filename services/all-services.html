@@ -67,392 +67,408 @@
         }
     </style>
     <style>
-/* Color Palette for Food Website */
-:root {
-    --food-primary: #ff6b35;
-    --food-secondary: #ffa500;
-    --food-accent: #00b894;
-    --food-dark: #2d3436;
-    --food-light: #fff8f0;
-    --food-cream: #ffeaa7;
-    --food-brown: #8d5a53;
-    --food-green: #00cec9;
-}
+        /* Color Palette for Food Website */
+        :root {
+            --food-primary: #ff6b35;
+            --food-secondary: #ffa500;
+            --food-accent: #00b894;
+            --food-dark: #2d3436;
+            --food-light: #fff8f0;
+            --food-cream: #ffeaa7;
+            --food-brown: #8d5a53;
+            --food-green: #00cec9;
+        }
 
-.modern-services-section {
-    background: linear-gradient(135deg, #fff8f0 0%, #fff0e1 100%);
-    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    position: relative;
-    overflow: hidden;
-}
+        .modern-services-section {
+            background: linear-gradient(135deg, #fff8f0 0%, #fff0e1 100%);
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
 
-/* Background pattern */
-.modern-services-section::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: 
-        radial-gradient(circle at 5% 15%, rgba(255, 107, 53, 0.05) 0%, transparent 20%),
-        radial-gradient(circle at 95% 85%, rgba(0, 184, 148, 0.05) 0%, transparent 20%),
-        radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 0.03) 0%, transparent 30%);
-    pointer-events: none;
-}
+        /* Background pattern */
+        .modern-services-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                radial-gradient(circle at 5% 15%, rgba(255, 107, 53, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 95% 85%, rgba(0, 184, 148, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 50% 50%, rgba(255, 165, 0, 0.03) 0%, transparent 30%);
+            pointer-events: none;
+        }
 
-/* Section Header */
-.section-header {
-    position: relative;
-    padding-bottom: 40px;
-}
+        /* Section Header */
+        .section-header {
+            position: relative;
+            padding-bottom: 40px;
+        }
 
-.section-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: var(--food-dark);
-    margin-bottom: 15px;
-    letter-spacing: -1px;
-    position: relative;
-    display: inline-block;
-}
+        .section-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--food-dark);
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+            position: relative;
+            display: inline-block;
+        }
 
-.section-title .highlight {
-    background: linear-gradient(90deg, var(--food-primary), var(--food-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    position: relative;
-}
+        .section-title .highlight {
+            background: linear-gradient(90deg, var(--food-primary), var(--food-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
 
-.section-subtitle {
-    font-size: 1.2rem;
-    color: var(--food-brown);
-    margin-bottom: 30px;
-    font-weight: 500;
-}
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--food-brown);
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
 
-.title-decoration {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
+        .title-decoration {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-.decoration-line {
-    width: 100px;
-    height: 3px;
-    background: linear-gradient(90deg, var(--food-primary), var(--food-secondary));
-    border-radius: 2px;
-}
+        .decoration-line {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--food-primary), var(--food-secondary));
+            border-radius: 2px;
+        }
 
-.decoration-icon {
-    font-size: 2rem;
-    animation: float 3s ease-in-out infinite;
-}
+        .decoration-icon {
+            font-size: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
 
-/* Service Cards */
-.service-card-wrapper {
-    position: relative;
-}
+        /* Service Cards */
+        .service-card-wrapper {
+            position: relative;
+        }
 
-.service-card {
-    background: white;
-    border-radius: 30px;
-    overflow: hidden;
-    padding: 40px;
-    box-shadow: 0 15px 40px rgba(141, 90, 83, 0.08);
-    border: 1px solid rgba(255, 107, 53, 0.1);
-    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: relative;
-    z-index: 1;
-        margin: 20px 0;
-}
+        .service-card {
+            background: white;
+            border-radius: 30px;
+            overflow: hidden;
+            padding: 40px;
+            box-shadow: 0 15px 40px rgba(141, 90, 83, 0.08);
+            border: 1px solid rgba(255, 107, 53, 0.1);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            z-index: 1;
+            margin: 20px 0;
+        }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 60px rgba(141, 90, 83, 0.15);
-    border-color: rgba(255, 107, 53, 0.3);
-}
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(141, 90, 83, 0.15);
+            border-color: rgba(255, 107, 53, 0.3);
+        }
 
-.service-image {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    transform: perspective(1000px) rotateY(-5deg);
-    transition: all 0.5s ease;
-}
+        .service-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            transform: perspective(1000px) rotateY(-5deg);
+            transition: all 0.5s ease;
+        }
 
-.service-card:hover .service-image {
-    transform: perspective(1000px) rotateY(0deg);
-}
+        .service-card:hover .service-image {
+            transform: perspective(1000px) rotateY(0deg);
+        }
 
-.service-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    transition: transform 0.8s ease;
-}
+        .service-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
 
-.service-card:hover .service-image img {
-    transform: scale(1.05);
-}
+        .service-card:hover .service-image img {
+            transform: scale(1.05);
+        }
 
-.image-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(0, 184, 148, 0.1));
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
+        .image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(45deg, rgba(255, 107, 53, 0.1), rgba(0, 184, 148, 0.1));
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
 
-.service-card:hover .image-overlay {
-    opacity: 1;
-}
+        .service-card:hover .image-overlay {
+            opacity: 1;
+        }
 
-.service-tag {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: var(--food-primary);
-    color: white;
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
-    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
-    z-index: 2;
-}
+        .service-tag {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--food-primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+            z-index: 2;
+        }
 
-.service-content {
-    padding: 20px;
-    position: relative;
-}
+        .service-content {
+            padding: 20px;
+            position: relative;
+        }
 
-.service-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 165, 0, 0.1));
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    border: 2px solid rgba(255, 107, 53, 0.2);
-    transition: all 0.4s ease;
-}
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 165, 0, 0.1));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            border: 2px solid rgba(255, 107, 53, 0.2);
+            transition: all 0.4s ease;
+        }
 
-.service-card:hover .service-icon {
-    background: linear-gradient(135deg, var(--food-primary), var(--food-secondary));
-    transform: rotate(10deg) scale(1.1);
-}
+        .service-card:hover .service-icon {
+            background: linear-gradient(135deg, var(--food-primary), var(--food-secondary));
+            transform: rotate(10deg) scale(1.1);
+        }
 
-.service-icon svg {
-    color: var(--food-primary);
-    transition: all 0.4s ease;
-}
+        .service-icon svg {
+            color: var(--food-primary);
+            transition: all 0.4s ease;
+        }
 
-.service-card:hover .service-icon svg {
-    color: white;
-}
+        .service-card:hover .service-icon svg {
+            color: white;
+        }
 
-.service-title {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: var(--food-dark);
-    margin-bottom: 20px;
-    line-height: 1.2;
-    position: relative;
-}
+        .service-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--food-dark);
+            margin-bottom: 20px;
+            line-height: 1.2;
+            position: relative;
+        }
 
-.service-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--food-primary), var(--food-secondary));
-    border-radius: 2px;
-}
+        .service-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--food-primary), var(--food-secondary));
+            border-radius: 2px;
+        }
 
-.service-divider {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 30px 0;
-}
+        .service-divider {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
 
-.divider-line {
-    flex: 1;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--food-brown), transparent);
-}
+        .divider-line {
+            flex: 1;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--food-brown), transparent);
+        }
 
-.divider-dot {
-    width: 8px;
-    height: 8px;
-    background: var(--food-primary);
-    border-radius: 50%;
-    animation: pulse 2s infinite;
-}
+        .divider-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--food-primary);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
 
-.service-description {
-    color: var(--food-brown);
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    font-weight: 400;
-}
+        .service-description {
+            color: var(--food-brown);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
 
-/* Button */
-.service-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: linear-gradient(135deg, var(--food-primary), var(--food-secondary));
-    color: white;
-    padding: 16px 35px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    margin-top: 20px;
-    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
-    position: relative;
-    overflow: hidden;
-}
+        /* Button */
+        .service-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--food-primary), var(--food-secondary));
+            color: white;
+            padding: 16px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            margin-top: 20px;
+            box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
 
-.service-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.7s ease;
-}
+        .service-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.7s ease;
+        }
 
-.service-btn:hover::before {
-    left: 100%;
-}
+        .service-btn:hover::before {
+            left: 100%;
+        }
 
-.service-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(255, 107, 53, 0.4);
-    gap: 15px;
-    color: #fff !important;
+        .service-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255, 107, 53, 0.4);
+            gap: 15px;
+            color: #fff !important;
 
-}
+        }
 
-.service-btn svg {
-    transition: transform 0.3s ease;
-}
+        .service-btn svg {
+            transition: transform 0.3s ease;
+        }
 
-.service-btn:hover svg {
-    transform: translateX(5px);
-}
+        .service-btn:hover svg {
+            transform: translateX(5px);
+        }
 
-/* Animations */
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
+        /* Animations */
+        @keyframes float {
 
-@keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.7; transform: scale(1.1); }
-}
+            0%,
+            100% {
+                transform: translateY(0);
+            }
 
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+            50% {
+                transform: translateY(-10px);
+            }
+        }
 
-.animate-on-scroll {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s ease;
-}
+        @keyframes pulse {
 
-.animate-on-scroll.animated {
-    opacity: 1;
-    transform: translateY(0);
-}
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
 
-/* Responsive Design */
-@media (max-width: 992px) {
-    .section-title {
-        font-size: 2.8rem;
-    }
-    
-    .service-card {
-        padding: 30px;
-    }
-    
-    .service-title {
-        font-size: 1.8rem;
-    }
-    
-    .service-image {
-        transform: perspective(1000px) rotateY(0deg);
-        margin-bottom: 30px;
-    }
-    
-    .service-image img {
-        height: 350px;
-    }
-}
+            50% {
+                opacity: 0.7;
+                transform: scale(1.1);
+            }
+        }
 
-@media (max-width: 768px) {
-    .modern-services-section {
-        padding: 60px 0 !important;
-    }
-    
-    .section-title {
-        font-size: 2.2rem;
-    }
-    
-    .section-subtitle {
-        font-size: 1rem;
-    }
-    
-    .service-card {
-        padding: 25px;
-        border-radius: 20px;
-    }
-    
-    .service-title {
-        font-size: 1.6rem;
-    }
-    
-    .service-description {
-        font-size: 1rem;
-    }
-    
-    .service-btn {
-        padding: 14px 28px;
-        font-size: 1rem;
-    }
-    
-    .decoration-line {
-        width: 50px;
-    }
-}
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
 
-/* Optional: Scroll Animation JavaScript */
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-</style>
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .section-title {
+                font-size: 2.8rem;
+            }
+
+            .service-card {
+                padding: 30px;
+            }
+
+            .service-title {
+                font-size: 1.8rem;
+            }
+
+            .service-image {
+                transform: perspective(1000px) rotateY(0deg);
+                margin-bottom: 30px;
+            }
+
+            .service-image img {
+                height: 350px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .modern-services-section {
+                padding: 60px 0 !important;
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+            }
+
+            .service-card {
+                padding: 25px;
+                border-radius: 20px;
+            }
+
+            .service-title {
+                font-size: 1.6rem;
+            }
+
+            .service-description {
+                font-size: 1rem;
+            }
+
+            .service-btn {
+                padding: 14px 28px;
+                font-size: 1rem;
+            }
+
+            .decoration-line {
+                width: 50px;
+            }
+        }
+
+        /* Optional: Scroll Animation JavaScript */
+    </style>
 </head>
 
 <body>
@@ -525,8 +541,8 @@
 
 
         <!--? Top Image  -->
-        <div class="container-fluid p-0 mt-100"><img src="../Images/services-banner.webp" alt="banner"
-                width="100%"></div>
+        <div class="container-fluid p-0 mt-100"><img src="../Images/services-banner.webp" alt="banner" width="100%">
+        </div>
 
         <div class="container-fluid breadcrumb-bg p-3">
             <div class="container"><i class="fa fa-home clr-palki"></i><a href="/"><span
@@ -555,7 +571,7 @@
                         <div class="row g-5 align-items-center">
                             <div class="col-lg-6">
                                 <div class="service-image">
-                                    <img src="../Images/lYm7uxvOWyHZW26LudNIJYHvfXTk5gba1VklzKXy.jpg"
+                                    <img src="../Images/industrial-cafeteria-meals.webp"
                                         alt="Industrial Cafeteria Meals" class="img-fluid">
                                     <div class="image-overlay"></div>
                                     <div class="service-tag">Industrial</div>
@@ -581,16 +597,19 @@
                                         <div class="divider-line"></div>
                                     </div>
                                     <p class="service-description">
-                                        At Laxmi Food Services, we extend our expertise beyond corporate catering to
-                                        cater to the unique needs of industrial settings. Our industrial catering
-                                        services encompass both in-house production and supply from our base kitchen to
-                                        factories, ensuring timely delivery of nourishing meals.
+                                        Laxmi Food Services provides reliable industrial catering solutions with on-site
+                                        preparation and
+                                        timely supply from our modern base kitchen, ensuring consistent quality and
+                                        punctual delivery.
                                     </p>
+
                                     <p class="service-description">
-                                        Designed specifically for the workforce at manufacturing plants spanning
-                                        industries such as automobile, telecom, mobile parts, engineering products, and
-                                        more, our offerings prioritize quality, variety, and nutritional value.
+                                        Our menus are designed to meet the daily nutritional needs of workforces across
+                                        diverse
+                                        manufacturing sectors, with a focus on balanced nutrition, variety, and quality.
                                     </p>
+
+
                                     <a href="./industrial-cafeteria-meals.html" class="service-btn">
                                         <span>Explore Now</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -612,7 +631,7 @@
                         <div class="row g-5 align-items-center">
                             <div class="col-lg-6 order-lg-2">
                                 <div class="service-image">
-                                    <img src="../Images/1714373650.jpg" alt="Corporate Cafeteria Meals"
+                                    <img src="../Images/corporate-cafeteria-meals.webp" alt="Corporate Cafeteria Meals"
                                         class="img-fluid">
                                     <div class="image-overlay"></div>
                                     <div class="service-tag">Corporate</div>
@@ -635,12 +654,15 @@
                                         <div class="divider-line"></div>
                                     </div>
                                     <p class="service-description">
-                                        At Laxmi Food Services, we specialize in corporate catering, offering a
-                                        comprehensive range of food services tailored to the needs of corporate offices,
-                                        MNC headquarters, and factories. Our in-house production ensures the highest
-                                        quality meals, prepared in our state-of-the-art kitchen facility spanning 2500
-                                        sq. ft.
+                                        Laxmi Food Services specializes in corporate catering, delivering end-to-end
+                                        food solutions
+                                        tailored for corporate offices, MNC headquarters, and factory setups. All meals
+                                        are prepared
+                                        through in-house production at our <strong>2,500 sq. ft. modern kitchen
+                                            facility</strong>,
+                                        ensuring superior quality, hygiene, and consistency in every serving.
                                     </p>
+
                                     <a href="./corporate-cafeteria-meals.html" class="service-btn">
                                         <span>Explore Now</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -662,7 +684,7 @@
                         <div class="row g-5 align-items-center">
                             <div class="col-lg-6">
                                 <div class="service-image">
-                                    <img src="../Images/1714373894.jpg" alt="Bulk Bakery Supplies" class="img-fluid">
+                                    <img src="../Images/bulk-bakery-supplies.webp" alt="Bulk Bakery Supplies" class="img-fluid">
                                     <div class="image-overlay"></div>
                                     <div class="service-tag">Bakery</div>
                                 </div>
@@ -689,11 +711,14 @@
                                         <div class="divider-line"></div>
                                     </div>
                                     <p class="service-description">
-                                        At Laxmi Food Services, your one-stop destination for bulk bakery supplies
-                                        tailored to B2B needs. Whether you're a restaurant, café, or catering company,
-                                        we've got you covered with our extensive range of high-quality bakery
-                                        ingredients and products.
+                                        Laxmi Food Services is your one-stop destination for bulk bakery supplies,
+                                        tailored to meet
+                                        diverse B2B requirements. Whether you operate a restaurant, café, or catering
+                                        company, we
+                                        provide an extensive range of high-quality bakery ingredients and products you
+                                        can rely on.
                                     </p>
+
                                     <a href="./bulk-bakery-supplies.html" class="service-btn">
                                         <span>Explore Now</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -715,7 +740,7 @@
                         <div class="row g-5 align-items-center">
                             <div class="col-lg-6 order-lg-2">
                                 <div class="service-image">
-                                    <img src="../Images/1714374012.jpg" alt="New Product Development" class="img-fluid">
+                                    <img src="../Images/new-product-development.webp" alt="New Product Development" class="img-fluid">
                                     <div class="image-overlay"></div>
                                     <div class="service-tag">Innovation</div>
                                 </div>
@@ -739,11 +764,15 @@
                                         <div class="divider-line"></div>
                                     </div>
                                     <p class="service-description">
-                                        At Laxmi Food Services, we offer a unique service category where companies can
-                                        innovate and develop new recipes or products in our state-of-the-art kitchen.
-                                        Under expert supervision and guidance, our team collaborates with clients to
-                                        bring their culinary visions to life.
+                                        Laxmi Food Services offers a specialized service that enables companies to
+                                        innovate and develop
+                                        new recipes or food products within our state-of-the-art kitchen. With expert
+                                        supervision and
+                                        hands-on guidance, our team works closely with clients to transform culinary
+                                        ideas into
+                                        market-ready solutions.
                                     </p>
+
                                     <a href="./new-product-development.html" class="service-btn">
                                         <span>Explore Now</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -765,7 +794,7 @@
                         <div class="row g-5 align-items-center">
                             <div class="col-lg-6">
                                 <div class="service-image">
-                                    <img src="../Images/1714374087.jpg" alt="Corporate Supplies" class="img-fluid">
+                                    <img src="../Images/corporate-supplies.webp" alt="Corporate Supplies" class="img-fluid">
                                     <div class="image-overlay"></div>
                                     <div class="service-tag">Confectionery</div>
                                 </div>
@@ -788,12 +817,15 @@
                                         <div class="divider-line"></div>
                                     </div>
                                     <p class="service-description">
-                                        At Laxmi Food Services, we specialize in crafting delectable cakes,
-                                        confectionery, and desserts in large quantities to elevate any celebration.
-                                        Whether it's a corporate event, employee appreciation day, or a milestone
-                                        achievement, our expert chefs create irresistible treats that leave a lasting
-                                        impression.
+                                        Laxmi Food Services specializes in creating premium cakes, confectionery, and
+                                        desserts in large
+                                        quantities, perfect for enhancing any celebration. From corporate events and
+                                        employee
+                                        appreciation days to milestone achievements, our expert chefs craft delightful
+                                        treats that
+                                        leave a lasting impression.
                                     </p>
+
                                     <a href="./corporate-supplies.html" class="service-btn">
                                         <span>Explore Now</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -815,7 +847,7 @@
                         <div class="row g-5 align-items-center">
                             <div class="col-lg-6 order-lg-2">
                                 <div class="service-image">
-                                    <img src="../Images/1714374373.jpg" alt="Catering for Social Ceremonies"
+                                    <img src="../Images/catering-for-social-ceremonies.webp" alt="Catering for Social Ceremonies"
                                         class="img-fluid">
                                     <div class="image-overlay"></div>
                                     <div class="service-tag">Celebrations</div>
@@ -838,11 +870,15 @@
                                         <div class="divider-line"></div>
                                     </div>
                                     <p class="service-description">
-                                        Welcome to Popular Platter, a division of Laxmi Food Services! Elevate your
-                                        social events with our exquisite catering services. From housewarming to
-                                        birthdays, and anniversaries to festive gatherings, we specialize in creating
-                                        memorable dining experiences for every occasion.
+                                        Welcome to Popular Platter, a division of Laxmi Food Services, dedicated to
+                                        elevating your social
+                                        events with exquisite catering experiences. From housewarmings and birthdays to
+                                        anniversaries
+                                        and festive celebrations, we specialize in crafting memorable dining moments for
+                                        every
+                                        occasion.
                                     </p>
+
                                     <a href="./catering-for-social-ceremonies.html" class="service-btn">
                                         <span>Explore Now</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -864,7 +900,7 @@
                         <div class="row g-5 align-items-center">
                             <div class="col-lg-6">
                                 <div class="service-image">
-                                    <img src="../Images/1714374639.jpg" alt="Catering for Large Corporate"
+                                    <img src="../Images/catering-for-large-corporate.webp" alt="Catering for Large Corporate"
                                         class="img-fluid">
                                     <div class="image-overlay"></div>
                                     <div class="service-tag">Large Events</div>
@@ -889,12 +925,15 @@
                                         <div class="divider-line"></div>
                                     </div>
                                     <p class="service-description">
-                                        We also specialize in catering for large corporate events, annual days,
-                                        founder's Day celebrations, festival parties, and R&amp;R events. Our expert
-                                        team ensures seamless service and delectable cuisine to make your gatherings
-                                        unforgettable. Trust us to elevate your event with our exceptional catering
-                                        services.
+                                        We also specialize in catering for large-scale corporate events, including
+                                        annual days,
+                                        Founder’s Day celebrations, festival gatherings, and R&amp;R events. Our
+                                        experienced team
+                                        delivers seamless service and exceptional cuisine, ensuring every event is
+                                        memorable and
+                                        flawlessly executed.
                                     </p>
+
                                     <a href="./catering-for-large-corporate.html" class="service-btn">
                                         <span>Explore Now</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
