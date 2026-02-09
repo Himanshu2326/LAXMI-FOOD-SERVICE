@@ -43,6 +43,13 @@
         href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="icon" href="../Images/favicon.ico">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Images/favicon-16x16.png">
+
+    <link rel="apple-touch-icon" href="../Images/apple-touch-icon.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&amp;display=swap" rel="stylesheet">
@@ -125,7 +132,7 @@
                                     </li>
                                 </ul>
                             </li>
-                            <!-- <li class="dropdown"><a id="down" class="deactive" href="/"><span>Palkipreneures</span> <i
+                            <!-- <li class="dropdown"><a id="down" class="deactive" href="/"><span></span> <i
                                         class="bi bi-chevron-down dropdown-indicator"></i></a>
                                 <ul id="inner-down" class="dropdown-deactive">
                                     <li><a href="/training-development">Training, learning &amp; Growing</a></li>
@@ -144,8 +151,8 @@
 
 
         <!--? Top Image  -->
-        <div class="container-fluid p-0 mt-100"><img src="../Images/contact-us-banner.webp" alt="banner"
-                width="100%"></div>
+        <div class="container-fluid p-0 mt-100"><img src="../Images/contact-us-banner.webp" alt="banner" width="100%">
+        </div>
 
         <div class="container-fluid breadcrumb-bg p-3">
             <div class="container"><i class="fa fa-home clr-palki"></i><a href="/"><span
@@ -162,20 +169,37 @@
                     <div class="col-md-2"></div>
                     <div class="col-md-8 contact-inner">
                         <div class="contact-form">
-                            <form>
+                            <form action="../mail/contact.php" method="POST">
                                 <div class="row">
-                                    <div class="col-md-6 mb-4"><input type="text" name="name" class="form-control"
-                                            placeholder="Enter your name" fdprocessedid="eovvnq"></div>
-                                    <div class="col-md-6 mb-4"><input type="email" name="email" class="form-control"
-                                            placeholder="Enter your email" fdprocessedid="nj30p"></div>
-                                    <div class="col-md-6 mb-4"><input type="number" name="phone" class="form-control"
-                                            placeholder="Enter your Number" fdprocessedid="z0t4ii"></div>
-                                    <div class="col-md-6 mb-4"><input type="text" name="subject" class="form-control"
-                                            placeholder="Enter your subject" fdprocessedid="c1jc7e"></div>
-                                    <div class="col-12 mb-4"><textarea name="message" id="message" rows="5"
-                                            class="form-control" placeholder="Your message..."></textarea></div>
-                                </div><button type="submit" class="btn-palki" fdprocessedid="ecawcl">Submit</button>
+                                    <div class="col-md-6 mb-4">
+                                        <input type="text" name="name" class="form-control"
+                                            placeholder="Enter your name" required>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <input type="email" name="email" class="form-control"
+                                            placeholder="Enter your email" required>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <input type="number" name="phone" class="form-control"
+                                            placeholder="Enter your Number" required>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <input type="text" name="subject" class="form-control"
+                                            placeholder="Enter your subject">
+                                    </div>
+
+                                    <div class="col-12 mb-4">
+                                        <textarea name="message" rows="5" class="form-control"
+                                            placeholder="Your message..." required></textarea>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn-palki">Submit</button>
                             </form>
+
                         </div>
                     </div>
                     <div class="col-md-2"></div>
@@ -189,9 +213,7 @@
                 <div class="row">
                     <div class="col-md-4 mb-4">
                         <div class="contact-wrapper">
-                            <div class="contact-item"><img
-                                    src="../Images/callus.webp"
-                                    alt="phone" width="100%"></div>
+                            <div class="contact-item"><img src="../Images/callus.webp" alt="phone" width="100%"></div>
                             <div class="contact-info text-center">
                                 <h4 class="bold-7">Call Us</h4>
                                 <p>+91-9220979389</p>
@@ -200,9 +222,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="contact-wrapper">
-                            <div class="contact-item"><img
-                                    src="../Images/mail.webp"
-                                    alt="phone" width="100%"></div>
+                            <div class="contact-item"><img src="../Images/mail.webp" alt="phone" width="100%"></div>
                             <div class="contact-info text-center">
                                 <h4 class="bold-7">Mail Us</h4>
                                 <p>laxmifoodservice062023@gmail.com</p>
@@ -211,9 +231,7 @@
                     </div>
                     <div class="col-md-4 mb-4">
                         <div class="contact-wrapper">
-                            <div class="contact-item"><img
-                                    src="../Images/location.webp"
-                                    alt="phone" width="100%"></div>
+                            <div class="contact-item"><img src="../Images/location.webp" alt="phone" width="100%"></div>
                             <div class="contact-info text-center">
                                 <h4 class="bold-7">Location</h4>
                                 <p> GT-54, Sector-70 Noida
@@ -239,7 +257,7 @@
                         <p class="text-justify clr-black">Laxmi Food Services is providing Catering services to
                             employees on daily basis in different industries.</p>
                         <div class="social-links d-flex mt-4">
-                            <a class="twitter" href="https://x.com/Palkifood">
+                            <a class="twitter" href="#">
                                 <i class="bi bi-twitter clr-palki"></i></a><a class="facebook" href="#"><i
                                     class="bi bi-facebook clr-palki"></i></a><a class="instagram" href="#"><i
                                     class="bi bi-instagram clr-palki"></i></a><a class="linkedin" href="#"><i

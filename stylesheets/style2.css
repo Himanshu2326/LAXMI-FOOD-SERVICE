@@ -598,7 +598,8 @@
     box-shadow: 0 0 20px #00000014;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    padding: 100px 0 !important;
 }
 
 .text-justify {
